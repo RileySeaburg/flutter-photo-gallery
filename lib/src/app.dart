@@ -45,6 +45,7 @@ class AppState extends State<App> {
     // instantiate the model class. if the ersponse contains html then throw an exception and print the error.
     if (httpResponse.statusCode == 200) {
       var decodedJson = json.decode(httpResponse.body);
+                        // Allows for a type-safe conversion from JSON to a Dart class.
       var pexelsModel = PexelsModel.fromJson(decodedJson);
       setState(() {
         photos.add(pexelsModel);
