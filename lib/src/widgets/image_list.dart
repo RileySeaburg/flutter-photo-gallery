@@ -19,7 +19,7 @@ class ImageList extends StatelessWidget {
 
   // build listview widget.
   @override
-  Widget build(BuildContext context) {6
+  Widget build(BuildContext context) {
     return ListView.builder(
       itemCount: photos.length,
       itemBuilder: (context, int index) {
